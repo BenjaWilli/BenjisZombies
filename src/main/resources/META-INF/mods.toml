@@ -1,0 +1,15 @@
+modLoader="javafml" #mandatory
+loaderVersion="[35,)" #mandatory
+license="All rights reserved" #mandatory https://choosealicense.com/
+ 
+[[mods]]
+modId="benjiszombies"
+version="0.0.1"
+displayName="Benji's Zombies"
+logoFile="examplemod.png"
+credits="The endless hours of effort poured into school."
+authors="Benji"
+description='''
+Hello!
+This is a mod I am making for school. I plan on introducing a zombie mode, new blocks, items, and other stuff to introduce you to the Minecraft zombie way of living!
+'''
