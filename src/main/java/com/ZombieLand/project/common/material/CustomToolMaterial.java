@@ -7,7 +7,7 @@ import net.minecraft.item.crafting.Ingredient;
 
 public enum CustomToolMaterial implements IItemTier {
 	
-	SOME_TOOl(4, 2000, 15f, 2f, 17,  () -> Ingredient.of(ItemInit.CONTAMINANT.get()));
+	PACKED_FLESH_TOOl(4, 2000, 15f, 2f, 17,  () -> Ingredient.of(ItemInit.CONTAMINANT.get()));
 	
 	private final int level;
 	private final int Uses;

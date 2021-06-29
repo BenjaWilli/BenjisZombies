@@ -1,15 +1,20 @@
-/*
+
 package com.ZombieLand.project.common.material;
+
+import java.util.function.Supplier;
+
+import com.ZombieLand.project.core.init.ItemInit;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.SoundEvent;
+import net.minecraft.util.SoundEvents;
 
 public enum CustomArmorMaterial implements IArmorMaterial{
-	;
+	PACKED_FLESH_ARMOR("packed_flesh", 10, new int [] {4, 7, 9, 4}, 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 4f, 0.2f, () -> Ingredient.of(ItemInit.CONTAMINANT.get()));
 	
-	private static final int[] baseDurability = { 128, 144, 160, 112 };
+	private final int[] baseDurability = { 128, 144, 160, 112 };
 	private final String name;
 	private final int durabilityMultiplier;
 	private final int[] armorVal;
@@ -17,51 +22,59 @@ public enum CustomArmorMaterial implements IArmorMaterial{
 	private final SoundEvent equipSound;
 	private final float toughness;
 	private final float knockbackResistance;
-	private Ingredient repairIngredient;
+	private final Ingredient repairIngredient;
 	
-	
+	CustomArmorMaterial(String name, int durabilityMultiplier, int[] armorVal, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+		this.name = name;
+		this.durabilityMultiplier = durabilityMultiplier;
+		this.armorVal = armorVal;
+		this.enchantmentValue= enchantmentValue;
+		this.equipSound = equipSound;
+		this.toughness= toughness;
+		this.knockbackResistance= knockbackResistance;
+		this.repairIngredient= repairIngredient.get();
+	}
 	
 	
 	
 	@Override
 	public int getDurabilityForSlot(EquipmentSlotType slot) {
-		return this.baseDurability[slot.getIndex()] * this.getDurabilityForSlot(slot);
+		return this.baseDurability[slot.getIndex()] * this.durabilityMultiplier;
 	}
 
 	@Override
 	public int getDefenseForSlot(EquipmentSlotType slotIn) {
-		return this.getDefenseForSlot(slotIn.getIndex());
+		return this.armorVal[slotIn.getIndex()];
 	}
 
 	@Override
 	public int getEnchantmentValue() {
-		return 0;
+		return this.enchantmentValue;
 	}
 
 	@Override
 	public SoundEvent getEquipSound() {
-		return null;
+		return this.equipSound;
 	}
 
 	@Override
 	public Ingredient getRepairIngredient() {
-		return null;
+		return this.repairIngredient;
 	}
 
 	@Override
 	public String getName() {
-		return null;
+		return this.name;
 	}
 
 	@Override
 	public float getToughness() {
-		return 0;
+		return this.toughness;
 	}
 
 	@Override
 	public float getKnockbackResistance() {
-		return 0;
+		return this.knockbackResistance;
 	}
 
 }
-*/

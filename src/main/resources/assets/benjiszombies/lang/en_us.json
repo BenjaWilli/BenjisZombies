@@ -1,4 +1,16 @@
 {
 	"item.benjiszombies.contaminant": "Contaminant",
-	"block.benjiszombies.contaminated_stone": "Contaminated Stone"
+	"block.benjiszombies.contaminated_stone": "Contaminated Stone",
+	
+	"item.benjiszombies.packed_flesh_sword": "Packed Flesh Sword",
+	"item.benjiszombies.packed_flesh_axe": "Packed Flesh Axe",
+	"item.benjiszombies.packed_flesh_pickaxe": "Packed Flesh Pickaxe",
+	"item.benjiszombies.packed_flesh_shovel": "Packed Flesh Shovel",
+	"item.benjiszombies.packed_flesh_hoe": "Packed Flesh Hoe",
+	
+	"item.benjiszombies.packed_flesh_helmet": "Packed Flesh Helmet",
+	"item.benjiszombies.packed_flesh_chestplate": "Packed Flesh Chestplate",
+	"item.benjiszombies.packed_flesh_leggings": "Packed Flesh Leggings",
+	"item.benjiszombies.packed_flesh_boots": "Packed Flesh Boots"
+	
 }
