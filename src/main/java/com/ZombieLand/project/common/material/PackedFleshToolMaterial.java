@@ -5,9 +5,9 @@ import com.ZombieLand.project.core.init.ItemInit;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
-public enum CustomToolMaterial implements IItemTier {
+public enum PackedFleshToolMaterial implements IItemTier {
 	
-	PACKED_FLESH_TOOl(4, 2000, 15f, 2f, 17,  () -> Ingredient.of(ItemInit.CONTAMINANT.get()));
+	PACKED_FLESH_TOOl(4, 1000, 15f, 2f, 17,  () -> Ingredient.of(ItemInit.CONTAMINANT.get()));
 	
 	private final int level;
 	private final int Uses;
@@ -16,7 +16,7 @@ public enum CustomToolMaterial implements IItemTier {
 	private final int enchantmentValue;
 	private final Ingredient repairIngredient;
 	
-	CustomToolMaterial(int level, int Uses, float speed, float attackDamageBonus, int enchantmentValue, Supplier<Ingredient> repairIngredient) {
+	PackedFleshToolMaterial(int level, int Uses, float speed, float attackDamageBonus, int enchantmentValue, Supplier<Ingredient> repairIngredient) {
 		this.level = level;
 		this.Uses = Uses;
 		this.speed= speed;

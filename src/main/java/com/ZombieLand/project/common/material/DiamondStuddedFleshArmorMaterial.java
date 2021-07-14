@@ -1,4 +1,3 @@
-
 package com.ZombieLand.project.common.material;
 
 import java.util.function.Supplier;
@@ -11,8 +10,8 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 
-public enum PackedFleshArmorMaterial implements IArmorMaterial{
-	PACKED_FLESH_ARMOR("packed_flesh", 10, new int [] {2, 4, 6, 2}, 17, SoundEvents.ARMOR_EQUIP_IRON, 2f, 0.2f, () -> Ingredient.of(ItemInit.PACKED_FLESH.get()));
+public enum DiamondStuddedFleshArmorMaterial implements IArmorMaterial{
+	DIAMOND_STUDDED_FLESH_ARMOR("diamond_studded_flesh", 10, new int [] {3, 6, 8, 3}, 17, SoundEvents.ARMOR_EQUIP_DIAMOND, 4f, 0.2f, () -> Ingredient.of(ItemInit.PACKED_FLESH.get()));
 	
 	private final int[] baseDurability = { 128, 144, 160, 112 };
 	private final String name;
@@ -24,7 +23,7 @@ public enum PackedFleshArmorMaterial implements IArmorMaterial{
 	private final float knockbackResistance;
 	private final Ingredient repairIngredient;
 	
-	PackedFleshArmorMaterial(String name, int durabilityMultiplier, int[] armorVal, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+	DiamondStuddedFleshArmorMaterial(String name, int durabilityMultiplier, int[] armorVal, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
 		this.name = name;
 		this.durabilityMultiplier = durabilityMultiplier;
 		this.armorVal = armorVal;

@@ -21,4 +21,9 @@ public class BlockInit {
 					.harvestTool(ToolType.PICKAXE)
 					.harvestLevel(1)
 					.sound(SoundType.STONE)));
+		
+		public static final RegistryObject<Block> PACKED_FLESH = BLOCKS.register("packed_flesh", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.COLOR_BROWN)
+					.strength(1f, 6f)
+					.harvestTool(ToolType.AXE)
+					.sound(SoundType.HARD_CROP)));
 }
