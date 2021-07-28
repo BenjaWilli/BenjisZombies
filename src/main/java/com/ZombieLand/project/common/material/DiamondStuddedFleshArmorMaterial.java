@@ -11,7 +11,7 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 
 public enum DiamondStuddedFleshArmorMaterial implements IArmorMaterial{
-	DIAMOND_STUDDED_FLESH_ARMOR("diamond_studded_flesh", 10, new int [] {3, 6, 8, 3}, 17, SoundEvents.ARMOR_EQUIP_DIAMOND, 4f, 0.2f, () -> Ingredient.of(ItemInit.PACKED_FLESH.get()));
+	DIAMOND_STUDDED_FLESH_ARMOR("diamond_studded_flesh", 10, new int [] {3, 6, 8, 3}, 17, SoundEvents.ARMOR_EQUIP_DIAMOND, 4f, 0.2f, () -> Ingredient.of(ItemInit.DIAMOND_STUDDED_FLESH.get()));
 	
 	private final int[] baseDurability = { 128, 144, 160, 112 };
 	private final String name;

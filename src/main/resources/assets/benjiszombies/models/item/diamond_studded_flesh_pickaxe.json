@@ -1,0 +1,6 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "benjiszombies:items/diamond_studded_flesh_pickaxe"
+	}
+}

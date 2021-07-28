@@ -23,7 +23,12 @@ public class BlockInit {
 					.sound(SoundType.STONE)));
 		
 		public static final RegistryObject<Block> PACKED_FLESH = BLOCKS.register("packed_flesh", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.COLOR_BROWN)
-					.strength(1f, 6f)
+					.strength(1f, 3f)
 					.harvestTool(ToolType.AXE)
 					.sound(SoundType.HARD_CROP)));
+		
+		public static final RegistryObject<Block> DIAMOND_STUDDED_FLESH = BLOCKS.register("diamond_studded_flesh", () -> new Block(AbstractBlock.Properties.of(Material.STONE, MaterialColor.COLOR_BROWN)
+				.strength(1f, 3f)
+				.harvestTool(ToolType.AXE)
+				.sound(SoundType.HARD_CROP)));
 }

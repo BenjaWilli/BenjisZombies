@@ -1,7 +1,9 @@
 {
+	//Naming items in game
 	"item.benjiszombies.contaminant": "Contaminant",
 	"block.benjiszombies.contaminated_stone": "Contaminated Stone",
 	"block.benjiszombies.packed_flesh": "Packed Flesh",
+	"block.benjiszombies.diamond_studded_flesh": "Diamond Studded Flesh",
 	
 	"item.benjiszombies.packed_flesh_sword": "Packed Flesh Sword",
 	"item.benjiszombies.packed_flesh_axe": "Packed Flesh Axe",
@@ -9,9 +11,20 @@
 	"item.benjiszombies.packed_flesh_shovel": "Packed Flesh Shovel",
 	"item.benjiszombies.packed_flesh_hoe": "Packed Flesh Hoe",
 	
+	"item.benjiszombies.diamond_studded_flesh_sword": "Diamond Studded Flesh Sword",
+	"item.benjiszombies.diamond_studded_flesh_axe": "Diamond Studded Flesh Axe",
+	"item.benjiszombies.diamond_studded_flesh_pickaxe": "Diamond Studded Flesh Pickaxe",
+	"item.benjiszombies.diamond_studded_flesh_shovel": "Diamond Studded Flesh Shovel",
+	"item.benjiszombies.diamond_studded_flesh_hoe": "Diamond Studded Flesh Hoe",
+	
 	"item.benjiszombies.packed_flesh_helmet": "Packed Flesh Helmet",
 	"item.benjiszombies.packed_flesh_chestplate": "Packed Flesh Chestplate",
 	"item.benjiszombies.packed_flesh_leggings": "Packed Flesh Leggings",
-	"item.benjiszombies.packed_flesh_boots": "Packed Flesh Boots"
+	"item.benjiszombies.packed_flesh_boots": "Packed Flesh Boots",
+	
+	"item.benjiszombies.diamond_studded_flesh_helmet": "Diamond Studded Flesh Helmet",
+	"item.benjiszombies.diamond_studded_flesh_chestplate": "Diamond Studded Flesh Chestplate",
+	"item.benjiszombies.diamond_studded_flesh_leggings": "Diamond Studded Flesh Leggings",
+	"item.benjiszombies.diamond_studded_flesh_boots": "Diamond Studded Flesh Boots"
 	
 }
